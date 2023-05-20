@@ -17,3 +17,9 @@ output "cluster_certificate_authority_data" {
   description = "Nested attribute for certificate-authority-data for your EKS cluster."
   value       = module.eks.cluster_certificate_authority_data
 }
+
+output "vpc_id" {
+  value = module.vpc.vpc_id
+  description = "The ID of the VPC"
+}
+
